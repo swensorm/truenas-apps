@@ -11,7 +11,7 @@
 {% if values.ci %}
   {% do c1.healthcheck.disable() %}
 {% else %}
-  {% do c1.healthcheck.set_custom_test(["CMD","/updater/ddns-updater", "healthcheck"]) %}
+  {% do c1.healthcheck.use_built_in() %}
 {% endif %}
 
 {% do c1.environment.add_env("LISTENING_ADDRESS", ":%s" | format(values.network.web_port)) %}
