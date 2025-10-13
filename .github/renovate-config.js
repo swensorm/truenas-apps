@@ -252,8 +252,13 @@ module.exports = {
       ["joplin/server"]
     ),
     customVersioning(
+      // v1.52.0-noble
+      "^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-noble)$",
+      ["mcr.microsoft.com/playwright"]
+    ),
+    customVersioning(
       // v1.52.0-jammy
-      "^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-(?<build>(noble|jammy))$",
+      "^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)-jammy)$",
       ["mcr.microsoft.com/playwright"]
     ),
     customVersioning(

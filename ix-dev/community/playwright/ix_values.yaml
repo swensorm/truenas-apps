@@ -8,7 +8,7 @@ images:
     tag: v1.56.0-noble
   jammy_image:
     repository: mcr.microsoft.com/playwright
-    tag: v1.56.0-noble
+    tag: v1.56.0-jammy
 
 consts:
   playwright_container_name: playwright
